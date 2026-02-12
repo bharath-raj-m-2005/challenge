@@ -5,7 +5,9 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 const SECRET_CODE = 'steganography';
-const DAWN_IMAGE = '/imagee.jpeg';
+const DAWN_IMAGE = '/imagee.jpg';
+
+export const dynamic = 'force-static';
 
 export default function Home() {
   const [code, setCode] = useState('');
