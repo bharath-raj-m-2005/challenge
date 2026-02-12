@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
+    "export": "next export",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "preview": "next build && next start"
   },
   "dependencies": {
     "next": "16.1.6",
